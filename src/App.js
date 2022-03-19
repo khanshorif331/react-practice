@@ -1,8 +1,10 @@
 import './App.css';
+import Mobile from './Mobile/Mobile';
 
 function App() {
   return (
     <div className="App">
+      <Mobile></Mobile>
       <Blog heading="This is First Blog" author="Shorif Khan"></Blog>
       <Blog heading="This is Second Blog" author="Rafsan Choto Bhai"></Blog>
       <Blog heading="This is Third Blog" author="Ratul Sinha"></Blog>
