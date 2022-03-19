@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import logo from './battery-status.png';
 
 const Mobile = () => {
     const [battery,setBattery]=useState(100)
@@ -17,9 +18,9 @@ const Mobile = () => {
         }
         setBattery(newBatteryData)
     }
-
     return (
         <div>
+            <img width={50} src={logo} alt="" />
             <h1>{battery}%</h1>
             <button onClick={batteryDataDown}>Battery Down</button>
             <button onClick={batteryDataUp}>Battery Up</button>
